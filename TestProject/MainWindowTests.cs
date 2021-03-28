@@ -25,7 +25,7 @@ namespace TestProject
             var input = "asdf";
             var expected = $"Output: {input}";
 
-            box.SendKeys(input);
+            box.Text = input;
             button.ClickWithEvent();
             var result = block.Text;
 
@@ -39,14 +39,14 @@ namespace TestProject
             window.Show();
 
             var box = ControlFinder.FindByAutomationName<TextBox>(window, "aa");
-            var button = ControlFinder.FindByName<Button>(window, "B");
+            var button = ControlFinder.FindByName<Button>(window, "C");
             var block = ControlFinder.FindByAutomationId<TextBlock>(window, "dd");
 
             var input = "asdf";
             var expected = "wasd";
 
             box.SendKeys(input);
-            button.ClickWithEvent();
+            button.ClickWithCommand();
             var result = block.Text;
 
             Assert.AreNotEqual(expected, result);

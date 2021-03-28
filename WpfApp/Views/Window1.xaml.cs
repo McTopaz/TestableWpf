@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using WpfApp.ViewModels;
+
 namespace WpfApp.Views
 {
     /// <summary>
@@ -19,9 +21,19 @@ namespace WpfApp.Views
     /// </summary>
     public partial class Window1 : Window
     {
+        Window1ViewModel vm;
+
         public Window1()
         {
             InitializeComponent();
+
+            vm = new Window1ViewModel();
+            DataContext = vm;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            vm.Output = vm.Input;
         }
     }
 }
