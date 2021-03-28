@@ -35,7 +35,7 @@
         <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="12" HorizontalAlignment="Center">
             <Button Content="Window1" Width="150" Click="Window1_Click" />
             <Separator Width="12" Visibility="Hidden" />
-            <Button Width="150" Content="Window 2" Click="Window2_Click" />
+            <Button Width="150" Content="ComboBox" Click="ComboBox_Click" />
             <Separator Width="12" Visibility="Hidden" />
             <Button Content="UserControl1" Width="150" Click="UserControl1_Click" />
         </StackPanel>

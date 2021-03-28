@@ -44,8 +44,14 @@ namespace WpfApp
             window.Show();
         }
 
-        private void Window2_Click(object sender, RoutedEventArgs e)
+        private void ComboBox_Click(object sender, RoutedEventArgs e)
         {
+            var window = new ComboBoxWindow();
+            var vm = new ComboBoxViewModel();
+
+            vm.Fruits = new List<string> { "Banana", "Pear", "Lemon", "Apple" };
+            window.DataContext = vm;
+            window.Show();
         }
 
         private void UserControl1_Click(object sender, RoutedEventArgs e)

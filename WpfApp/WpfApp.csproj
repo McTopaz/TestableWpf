@@ -62,9 +62,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Misc\RelayCommand.cs" />
+    <Compile Include="ViewModels\ComboBoxViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\UserControl1ViewModel.cs" />
     <Compile Include="ViewModels\Window1ViewModel.cs" />
+    <Compile Include="Views\ComboBoxWindow.xaml.cs">
+      <DependentUpon>ComboBoxWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
@@ -83,6 +87,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ComboBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
