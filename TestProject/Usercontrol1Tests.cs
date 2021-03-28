@@ -10,7 +10,7 @@ using WpfApp.Views;
 namespace TestProject
 {
     [TestClass]
-    public class UnitTest1
+    public class UserControl1Tests
     {
         [TestMethod]
         public void UserControl1_Input_Equal_Output()
