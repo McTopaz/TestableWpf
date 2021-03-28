@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WpfApp/obj/Debug
+/TestProject/obj/Debug
+/TestableWpf/obj/Debug
+/WpfApp/bin/Debug
+/TestProject/bin/Debug
+/TestableWpf/bin/Debug
+/.vs/TestableWpf/v16
