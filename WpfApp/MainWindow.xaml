@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WpfApp" Height="450" Width="800">
+    
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="12" />
+        </Grid.RowDefinitions>
+
+        <DockPanel LastChildFill="True" Grid.Row="0" VerticalAlignment="Center" Margin="12">
+            <Label Content="Input: " />
+            <TextBox AutomationProperties.Name="aa" x:Name="A" Text="{Binding Input, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center"/>
+        </DockPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="12" HorizontalAlignment="Center">
+            <Button x:Name="B" Content="Click me - Event" Click="Button_Click" Width="150" />
+            <Separator Width="12" Visibility="Hidden" />
+            <Button x:Name="C" Content="Click me - Command" Command="{Binding ButtonCommand}" Width="150" />
+        </StackPanel>
+
+        <TextBlock AutomationProperties.AutomationId="dd" x:Name="D" Grid.Row="2" Background="LightGray" VerticalAlignment="Center" Margin="12">
+            <Run Text="Output:" />
+            <Run Text="{Binding Output}" />
+        </TextBlock>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="12" HorizontalAlignment="Center">
+            <Button Content="Window1" Width="150" Click="Window1_Click" />
+            <Separator Width="12" Visibility="Hidden" />
+            <Button Width="150" Content="Window 2" Click="Window2_Click" />
+            <Separator Width="12" Visibility="Hidden" />
+            <Button Content="UserControl2" Width="150" Click="UserControl1_Click" />
+        </StackPanel>
     </Grid>
+    
 </Window>
