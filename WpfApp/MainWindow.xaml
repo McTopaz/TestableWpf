@@ -37,7 +37,7 @@
             <Separator Width="12" Visibility="Hidden" />
             <Button Width="150" Content="Window 2" Click="Window2_Click" />
             <Separator Width="12" Visibility="Hidden" />
-            <Button Content="UserControl2" Width="150" Click="UserControl1_Click" />
+            <Button Content="UserControl1" Width="150" Click="UserControl1_Click" />
         </StackPanel>
     </Grid>
     

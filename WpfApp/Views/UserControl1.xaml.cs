@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using WpfApp.ViewModels;
+
 namespace WpfApp.Views
 {
     /// <summary>
@@ -20,9 +22,19 @@ namespace WpfApp.Views
     /// </summary>
     public partial class UserControl1 : UserControl
     {
+        UserControl1ViewModel vm;
+
         public UserControl1()
         {
             InitializeComponent();
+
+            vm = new UserControl1ViewModel();
+            DataContext = vm;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            vm.Output = vm.Input;
         }
     }
 }
