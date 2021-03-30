@@ -17,21 +17,22 @@ Read and write data by the use of the viewmodel or directely on the controls.**
  * Add necessary AutomationProperties reference. (see how-to beelow)
  * Make sure your WPF-application is compiled.
 
-4) Acquire the TestableWpf DLL-file.
-5) Add a Unit test project to your solution.
+2) Acquire the TestableWpf DLL-file.
+3) Add a Unit test project to your solution.
 
-6) In your test project:
+4) In your test project:
  * Add a reference to your WPF-application's project file.
  * Add a reference to the TestableWpf DLL-file.
  * Add references to necessary NET-Framework DLL files. (see list bellow)
  
-7) Create as many unit test files you need.
+5) Create as many unit test files you need.
    It's recommended one test file per control (Windows or UserControls) in your WPf.
 
-8) In each unit test file:
+6) In each unit test file:
  * Add necessary using statements. (see list bellow)
 
-9) Implement the test you need for your WPF-application.
+7) Implement the test you need for your WPF-application.
+8) Run the tests in Visual Studio.
 
 ### Include AutomationProperties in your WPF-application
 TestableWPF uses AutomationProperties to access your controls in your code.
@@ -63,7 +64,8 @@ using TestableWpf.Extensions;
 ```
 
 Add any using statements to your WPF-application as you need for the test you require.
-You might have different specific folders for View and ViewModels.
+
+For instance you might have specific folders for View and ViewModels.
 
 ```csharp
 using <YourWpfApplication>;
