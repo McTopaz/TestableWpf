@@ -9,3 +9,7 @@
 /TestProject/bin/Debug
 /TestableWpf/bin/Debug
 /.vs/TestableWpf/v16
+/.vs
+/TestableWpf/obj/Release
+/TestProject/obj/Release
+/WpfApp/obj/Release
