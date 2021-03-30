@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="WpfApp" Height="450" Width="800">
+        Title="WpfApp" Height="400" Width="800">
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*"/>
             <RowDefinition Height="12" />
         </Grid.RowDefinitions>
 
@@ -38,6 +38,23 @@
             <Button Width="150" Content="ComboBox" Click="ComboBox_Click" />
             <Separator Width="12" Visibility="Hidden" />
             <Button Content="UserControl1" Width="150" Click="UserControl1_Click" />
+            <Separator Width="12" Visibility="Hidden" />
+            
+            <GroupBox Header="Dialog window">
+                <DockPanel LastChildFill="True">
+                    <StackPanel Orientation="Vertical" Margin="6" DockPanel.Dock="Top">
+                        <Button AutomationProperties.AutomationId="DialogWindow" Content="Show" Click="DialogWindow_Click" />
+                        <Separator Height="6" Visibility="Hidden" />
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Value" VerticalContentAlignment="Center" />
+                            <TextBox x:Name="txtDialogWindowText" Text="WPF" Width="100" Background="LightGray" />
+                        </StackPanel>
+                            
+                    </StackPanel>
+                    <Separator Visibility="Hidden" DockPanel.Dock="Bottom" />
+                </DockPanel>
+            </GroupBox>
+            
         </StackPanel>
     </Grid>
     

@@ -60,5 +60,15 @@ namespace WpfApp
             window.Content = new UserControl1();
             window.Show();
         }
+
+        private void DialogWindow_Click(object sender, RoutedEventArgs e)
+        {
+            var def = txtDialogWindowText.Text;
+            var viewModel = new DialogWindowViewModel(def);
+            var window = new DialogWindow();
+            window.DataContext = viewModel;
+            window.ShowDialog();
+            txtDialogWindowText.Text = viewModel.Value;
+        }
     }
 }
