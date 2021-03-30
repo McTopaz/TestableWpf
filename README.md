@@ -6,9 +6,11 @@ Implement and perform unit tests on the controls.
 Read and write data by the use of the viewmodel or directely on the controls.**
 
 ### Goals
-* Independent from third party solutions to handle all communication between the WPF-application and the tests. (e.g. WinAppDriver).
-* Only one DLL to add into your test project.
-* Your WPF-application can be started and debugged in Visual Studio.
+* Do everything in Visual Studio.
+* BE independent from third party solutions to handle communications between the WPF-application and the tests. (e.g. WinAppDriver).
+* Use the TestableWpf DLL-file to gain access to your WPF-applications controls in your test files.
+* Let you have your WPF-application as the solution'ss Startup project so you can continue development.
+* Be able to run tests of your WPF-application frequently.
 
 ### Usage
 1) In your WPF-application.
