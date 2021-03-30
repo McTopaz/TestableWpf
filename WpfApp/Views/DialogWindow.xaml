@@ -10,7 +10,7 @@
     <DockPanel LastChildFill="False">
         <DockPanel LastChildFill="True" DockPanel.Dock="Top" Margin="12">
             <Label Content="Enter any value" DockPanel.Dock="Left" />
-            <TextBox Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  DockPanel.Dock="Right" />
+            <TextBox AutomationProperties.AutomationId="Value" Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" />
         </DockPanel>
         
         <DockPanel LastChildFill="True" DockPanel.Dock="Bottom">
