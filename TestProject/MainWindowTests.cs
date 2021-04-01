@@ -45,7 +45,7 @@ namespace TestProject
             var input = "asdf";
             var expected = "wasd";
 
-            box.SendKeys(input);
+            box.Text = input;
             button.ClickWithCommand();
             var result = block.Text;
 

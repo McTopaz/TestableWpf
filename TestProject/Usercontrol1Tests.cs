@@ -25,7 +25,7 @@ namespace TestProject
             var input = "asdf";
             var expected = $"Output: {input}";
 
-            box.SendKeys(input);
+            box.Text = input;
             button.ClickWithEvent();
             var result = block.Text;
 
