@@ -21,9 +21,11 @@ Read and write data by the use of the viewmodel or directely on the controls.**
 3) Add a Unit test project to your solution.
 
 4) In your test project:
+```
  * Add a reference to your WPF-application's project file.
  * Add a reference to the TestableWpf DLL-file.
  * Add references to necessary NET-Framework DLL files. (see list bellow)
+```
  
 5) Create as many unit test files you need.
    It's recommended one test file per control (Windows or UserControls) in your WPf.
