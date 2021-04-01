@@ -1,16 +1,15 @@
 # TestableWpf
 
-**Test WPF-code without need of any third party software.
+**Test a WPF-application without need of any third party software.
 Load your WPF-application's Windows and UserControls directly into your test project.
 Implement and perform unit tests on the controls.
 Read and write data by the use of the viewmodel or directely on the controls.**
 
 ### Goals
 * Do everything in Visual Studio.
-* BE independent from third party solutions to handle communications between the WPF-application and the tests. (e.g. WinAppDriver).
+* Be independent from third party solutions to handle communications between the WPF-application and the tests. (e.g. WinAppDriver).
 * Use the TestableWpf DLL-file to gain access to your WPF-applications controls in your test files.
-* Let you have your WPF-application as the solution'ss Startup project so you can continue development.
-* Be able to run tests of your WPF-application frequently.
+* Keep the WPF-application as the solution's Startup project to continue development anytime.
 
 ### Usage
 1) In your WPF-application.
