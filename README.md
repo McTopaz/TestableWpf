@@ -57,6 +57,8 @@ As your test project will use controls common in a WPF-application, it's necessa
 ### Add necessary using statement in your unit test files
 Add these using statements.
 
+#### Mandatory using statements
+
 ```csharp
 using System.Windows;
 using System.Windows.Controls;
@@ -64,9 +66,8 @@ using System.Windows.Controls;
 using TestableWpf;
 using TestableWpf.Extensions;
 ```
-
+#### Using statement for you application
 Add any using statements to your WPF-application as you need for the test you require.
-
 For instance you might have specific folders for View and ViewModels.
 
 ```csharp
